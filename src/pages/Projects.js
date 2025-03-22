@@ -190,7 +190,7 @@ const Projects = () => {
       description:
         "A dynamic personal website featuring my resume, project gallery, and contact information with a user-friendly design.",
       image: projectImages.portfolio,
-      tags: ["React", "Three.js", "GCP"],
+      tags: ["React", "Three.js", "Firebase"],
       codeLink: "https://github.com/jawndrews",
     },
     {
