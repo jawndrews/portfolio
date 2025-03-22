@@ -166,19 +166,19 @@ const Projects = () => {
     {
       id: 1,
       title: "MemberMint V2",
-      subtitle: "Membership Management Platform (Salesforce)",
+      subtitle: "Custom Salesforce Application",
       description:
-        "A comprehensive membership management platform, built on Salesforce for organizations to manage members, events, and communications.",
+        "A comprehensive membership management platform, built on Salesforce for organizations to manage members, income, events, and communications.",
       image: projectImages.membermintv2,
-      tags: ["Salesforce Experience Cloud", "Stripe API", "Apex", "LWC"],
+      tags: ["SFDC", "Stripe API", "Apex", "LWC"],
       comingLink: "#",
     },
     {
       id: 2,
       title: "MemberMint",
-      subtitle: "Membership Management Platform (Custom)",
+      subtitle: "Full Stack React App",
       description:
-        "A comprehensive membership management platform for organizations to manage members, events, and communications.",
+        "A comprehensive membership management platform for organizations to manage members, income, events, and communications.",
       image: projectImages.membermint,
       tags: ["React", "Express", "Node.js", "MongoDB"],
       codeLink: "https://github.com/jawndrews/finance-web-dev-project",
@@ -186,15 +186,48 @@ const Projects = () => {
     {
       id: 3,
       title: "Portfolio Site",
-      subtitle: "Personal Portfolio & Resume Site (the site you are on!)",
+      subtitle: "Personal Portfolio & Resume Site",
       description:
-        "A dynamic personal website featuring my resume, project gallery, and contact information with a user-friendly design.",
+        "A dynamic personal website featuring my resume, project gallery, and contact information with a user-friendly design (the site you are on!).",
       image: projectImages.portfolio,
       tags: ["React", "Three.js", "Firebase"],
       codeLink: "https://github.com/jawndrews",
     },
     {
       id: 4,
+      title: "mediahook",
+      subtitle: "Media Conversion App",
+      description:
+        "A full stack personal project that converts media from YouTube, TikTok, Instagram, and SoundCloud into downloadable MP3 or MP4 files.",
+      image: projectImages.mediahook,
+      tags: ["React", "Express", "REST API"],
+      codeLink: "https://github.com/jawndrews/media-converter",
+    },
+    {
+      id: 5,
+      title: "MusicCreator",
+      subtitle: "E-Commerce Product Designs",
+      description:
+        "Product images, logos, social media kits, and creative brand identity developed for an e-commerce music store.",
+      image: projectImages.musiccreator,
+      tags: ["Product Design", "Brand Identity Design"],
+      liveLink: "https://musiccreator.com/",
+      designLink:
+        "https://www.behance.net/gallery/147840085/Logo-Design-MusicCreatorcom",
+    },
+
+    {
+      id: 6,
+      title: "Sicily Island State Bank",
+      subtitle: "Regional Bank Website Build",
+      description:
+        "A WordPress site for a local bank with a new layout and updated styling, enabling a mobile-friendly structure.",
+      image: projectImages.sibank,
+      tags: ["WordPress", "UI Redesign", "Responsive"],
+      liveLink: "https://sibank.net",
+    },
+    {
+      id: 7,
       title: "Coming Soon",
       subtitle: "More projects coming soon!",
       description:
@@ -207,7 +240,6 @@ const Projects = () => {
   return (
     <ProjectsContainer>
       <FloatingShapes />
-
       <ProjectsContent>
         <ProjectsHeader>
           <ProjectsTitle
@@ -265,6 +297,15 @@ const Projects = () => {
                       rel="noopener noreferrer"
                     >
                       <i className="fab fa-github"></i> View Code
+                    </ProjectLink>
+                  )}
+                  {project.designLink && (
+                    <ProjectLink
+                      href={project.designLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa-solid fa-pen-nib"></i> Showcase
                     </ProjectLink>
                   )}
                   {project.comingLink && (
