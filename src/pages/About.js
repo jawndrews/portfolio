@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import FloatingShapes from "../components/FloatingShapes";
@@ -147,6 +147,10 @@ const SkillItem = styled(motion.div)`
 `;
 
 const About = () => {
+  useEffect(() => {
+    document.title = "Jonathan Andrews | About";
+  }, []);
+
   return (
     <AboutContainer>
       <FloatingShapes />

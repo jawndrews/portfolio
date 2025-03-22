@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import FloatingShapes from "../components/FloatingShapes";
@@ -256,6 +256,9 @@ const DownloadButton = styled(motion.a)`
 `;
 
 const Resume = () => {
+  useEffect(() => {
+    document.title = "Jonathan Andrews | Resume";
+  }, []);
   // Enhanced data structure with images, current flag, and optional skills
   const experienceItems = [
     {

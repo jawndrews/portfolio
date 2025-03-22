@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import FloatingShapes from "../components/FloatingShapes";
@@ -208,6 +208,10 @@ const SocialLink = styled(motion.a)`
 `;
 
 const Contact = () => {
+  useEffect(() => {
+    document.title = "Jonathan Andrews | Contact";
+  }, []);
+
   return (
     <ContactContainer>
       <FloatingShapes />

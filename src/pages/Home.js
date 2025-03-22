@@ -174,6 +174,9 @@ const Home = () => {
       canvas.removeChild(renderer.domElement);
     };
   }, []);
+  useEffect(() => {
+    document.title = "Jonathan Andrews | Home";
+  }, []);
 
   return (
     <HeroSection>
